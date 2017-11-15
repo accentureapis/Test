@@ -8,5 +8,3 @@
 {"event":"$set","entityType":"student","entityId":"2","properties":{"aptitude-grade":55,"overall-grade":79,"user":2}}
 {"event":"$set","entityType":"student","entityId":"2","properties":{"aptitude-grade":40,"overall-grade":73,"user":2}}
 {"event":"$set","entityType":"student","entityId":"2","properties":{"aptitude-grade":40,"overall-grade":68,"user":2}}
-{"event":"$set","entityType":"student","entityId":"2","properties":{"aptitude-grade":30,"overall-grade":66,"user":2}}
-{"event":"$set","entityType":"student","entityId":"2","properties":{"aptitude-grade":30,"overall-grade":58,"user":2}}
