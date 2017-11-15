@@ -13,8 +13,8 @@
         "numIterations" : 200,
         "stepSize" : 0.00066
       }
-    },
-    {
+    }
+   /* {
       "name": "tree",
       "params": {
         "impurity": "variance",
@@ -50,6 +50,6 @@
         "maxDepth":5,
         "maxBins": 32
       }
-    }
+    }*/
   ]
 }
