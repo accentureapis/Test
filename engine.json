@@ -8,10 +8,11 @@
   },
   "algorithms": [
     {
-      "name": "sgd",
+      "name": "tree",
       "params": {
-        "numIterations" : 200,
-        "stepSize" : 0.00066
+        "impurity": "variance",
+        "maxDepth":5,
+        "maxBins": 32
       }
     }
   ]
