@@ -16,11 +16,11 @@ object RegressionEngine extends EngineFactory {
       classOf[DataSource],
       classOf[Preparator],
       Map(
-        "sgd" -> classOf[LinearRegressionWithSGD],
-        "tree" -> classOf[DecisionTreeRegression],
-        "iso" -> classOf[IsotonicRegressionAlgorithm],
-        "ridge" -> classOf[RidgeRegression],
-        "lasso" -> classOf[LassoRegression]
+        //"sgd" -> classOf[LinearRegressionWithSGD],
+        "tree" -> classOf[DecisionTreeRegression]
+        //"iso" -> classOf[IsotonicRegressionAlgorithm],
+        //"ridge" -> classOf[RidgeRegression],
+        //"lasso" -> classOf[LassoRegression]
       ),
       classOf[Serving]
     )
