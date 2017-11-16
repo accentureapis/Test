@@ -40,7 +40,7 @@ class DataSource(ep: EmptyParams)
       case (entityId, properties) =>
         val fields = Map(
           "vector" -> JArray(List(
-             JDouble(properties.get[Double]("aptitude-grade")),JDouble(properties.get[Double]("user"),JDouble(properties.get[Double]("day"),JDouble(properties.get[Double]("month"))
+             JDouble(properties.get[Double]("aptitude-grade")),JDouble(properties.get[Double]("user")),JDouble(properties.get[Double]("day")),JDouble(properties.get[Double]("month"))
            )),
 		   "label" -> JDouble(properties.get[Double]("overall-grade"))
         )
