@@ -32,7 +32,7 @@ class DataSource(ep: EmptyParams)
   def selectEvents(sc: SparkContext): RDD[(String, PropertyMap)] = {
     val grades = PEventStore.aggregateProperties(
       appName = sys.env("PIO_EVENTSERVER_APP_NAME"),
-      entityType = "student",
+      entityType = "cokevendor",
       required = Some(List("item","quantity","vendor","day","month"))
     )(sc)
 
