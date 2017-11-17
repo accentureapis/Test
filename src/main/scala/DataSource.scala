@@ -33,14 +33,14 @@ class DataSource(ep: EmptyParams)
     val grades = PEventStore.aggregateProperties(
       appName = sys.env("PIO_EVENTSERVER_APP_NAME"),
       entityType = "cokevendor",
-      required = Some(List("item","quantity","vendor","day","month"))
+      required = Some(List("vendor","item","day","month","quantity"))
     )(sc)
 
     val events = grades.map {
       case (entityId, properties) =>
         val fields = Map(
           "vector" -> JArray(List(
-             JDouble(properties.get[Double]("item")),JDouble(properties.get[Double]("vendor")),JDouble(properties.get[Double]("day")),JDouble(properties.get[Double]("month"))
+             JDouble(properties.get[Double]("vendor")),JDouble(properties.get[Double]("item")),JDouble(properties.get[Double]("month")),JDouble(properties.get[Double]("day"))
            )),
 		   "label" -> JDouble(properties.get[Double]("quantity"))
         )
