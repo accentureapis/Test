@@ -1,5 +1,5 @@
-{"event":"$set","entityType":"cokevendor","entityId":"1","properties":{"item":90,"quantity":88,"vendor":1,"day":1,"month":5}}
-{"event":"$set","entityType":"cokevendor","entityId":"2","properties":{"item":35,"quantity":95,"vendor":2,"day":3,"month":8}}
+{"event":"$set","entityType":"cokevendor","entityId":"1","properties":{"item":95,"quantity":90,"vendor":5,"day":3,"month":5}}
+{"event":"$set","entityType":"cokevendor","entityId":"2","properties":{"item":70,"quantity":84,"vendor":4,"day":20,"month":11}}
 {"event":"$set","entityType":"cokevendor","entityId":"3","properties":{"item":40,"quantity":92,"vendor":2,"day":9,"month":3}}
 {"event":"$set","entityType":"cokevendor","entityId":"4","properties":{"item":60,"quantity":86,"vendor":3,"day":7,"month":12}}
-{"event":"$set","entityType":"cokevendor","entityId":"5","properties":{"item":70,"quantity":84,"vendor":4,"day":20,"month":11}}
+{"event":"$set","entityType":"cokevendor","entityId":"5","properties":{"item":95,"quantity":35,"vendor":2,"day":3,"month":8}}
