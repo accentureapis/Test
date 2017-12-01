@@ -2,7 +2,7 @@ package org.template.regression
 
 import org.apache.predictionio.controller.{EmptyEvaluationInfo, Engine, EngineFactory}
 
-case class Query(vector: Array[Double])
+case class Query(vector: Array[String])
 case class PredictedResult(
   prediction: Double
 )
