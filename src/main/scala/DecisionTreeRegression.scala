@@ -12,7 +12,6 @@ import org.apache.predictionio.data.storage.PropertyMap
 import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.mllib.tree.model.DecisionTreeModel
 import org.apache.spark.mllib.util.MLUtils
-import play.api.libs.json.Json
 
 case class DecisionTreeParams(impurity: String, maxDepth: Int, maxBins: Int) extends Params
 
