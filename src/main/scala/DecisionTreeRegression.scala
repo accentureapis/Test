@@ -16,36 +16,6 @@ import play.api.libs.json.Json
 
 case class DecisionTreeParams(impurity: String, maxDepth: Int, maxBins: Int) extends Params
 
-val inputJson=
-"""
-{
-  "eventId": "e85395d3d0974a89aa9bdf898c9d62de",
-  "event": "$set",
-  "entityType": "cokevendor",
-  "entityId": 1,
-  "properties": {
-    "quantity": 90,
-    "vendor": "5",
-    "day": 3,
-    "month": 5,
-    "item": "95"
-  },
-  "eventTime": "2017-12-04T06:00:35.700Z",
-  "creationTime": "2017-12-04T06:00:35.700Z"
-}
-"""
-val jsonValue = scala.util.parsing.json.JSON.parseFull(inputJson)
-
-jsonValue match{
-  case Some(m: Map[String, Any]) => m("vendor") match {
-    case s: String => s
-  }
-  case Some(p: Map[String, Any]) => p("item") match {
-    case s1: String => s1
-  }
-}
-println(s)
-
 class DecisionTreeRegression(val ap: DecisionTreeParams)
   extends P2LAlgorithm[PreparedData, DecisionTreeModel, Query, PredictedResult] {
 
