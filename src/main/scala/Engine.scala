@@ -45,7 +45,7 @@ object RegressionEngine extends EngineFactory {
      new Engine(
        classOf[DataSource],
        classOf[Preparator],
-       Map("randomforest" -> classOf[RandomForest]),
+       Map("randomforest" -> classOf[RandomForestAlgorithm]),
        classOf[Serving])
    }
  }
