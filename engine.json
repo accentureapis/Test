@@ -6,7 +6,7 @@
     "params" : {
     }
   },
-  "algorithms": [
+  /*"algorithms": [
     {
       "name": "tree",
       "params": {
@@ -15,5 +15,18 @@
         "maxBins": 32
       }
     }
-  ]
+  ]*/
+  "algorithms": [
+  {
+    "name": "randomforest",
+    "params": {
+      "numClasses": 4,
+      "numTrees": 5,
+      "featureSubsetStrategy": "auto",
+      "impurity": "gini",
+      "maxDepth": 4,
+      "maxBins": 100
+    }
+  }
+]
 }
