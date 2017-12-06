@@ -19,15 +19,6 @@ class DecisionTreeRegression(val ap: DecisionTreeParams)
   extends P2LAlgorithm[PreparedData, DecisionTreeModel, Query, PredictedResult] {
 
   @transient lazy val logger: Logger = Logger[this.type]
-    // ---- My Addition---------------
-   //Immutable Empty String List 
-   var dm  = List[String]()
-   var dk = List[Map[String,AnyRef]]()
-
-    // Fill a list with the results of calls to a method until you get something different
-    val l = Stream.continually(scala.util.Random.nextInt).takeWhile(x => x > 0).toList
-    //------------------------------------------
-
 
     override def train(sc: SparkContext, data: PreparedData): DecisionTreeModel = {
     def toLabelPoint(item: (String, PropertyMap)): LabeledPoint = item match {
