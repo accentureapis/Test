@@ -21,7 +21,7 @@ object RegressionEngine extends EngineFactory {
         //"iso" -> classOf[IsotonicRegressionAlgorithm],
         //"ridge" -> classOf[RidgeRegression],
         //"lasso" -> classOf[LassoRegression]
-        "LReg" -> classOf[LinearRegression]
+        "lreg" -> classOf[LinearRegression]
       ),
       classOf[Serving]
     )
